@@ -10,7 +10,7 @@ import {
 } from '../controllers/productController.js';
 
 router.route('/products').get(getAllProducts)
-router.route('/product').get(getProductById)
+router.route('/product/:id').get(getProductById)
 router.route('/new/product').post(createNewProduct)
 router.route('/updateProduct').put(updateProduct)
 router.route('/deleteProduct').delete(deleteProduct)
